@@ -115,7 +115,17 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    // const pets = arr.filter(pet => pet.name);
+
+    const capitals = arr.map(capital => {
+        return { 
+            name: capital.name.toUpperCase(),
+            type: capital.type
+        };
+    });
+
+
+    return capitals;
 }
 
 
