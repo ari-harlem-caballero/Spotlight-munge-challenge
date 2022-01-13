@@ -30,7 +30,12 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    //take array pets, only return names of dogs only
+    const dogs = arr.filter(pet => pet.type === 'dog');
+
+    const names = dogs.map(dog => dog.name);
+
+    return names;
 }
 
 
@@ -66,7 +71,15 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    //renaming the both keys of every object in the array                                  
+    const espanol = arr.map(obj => {
+        return {
+            nombre: obj.name,
+            tipo: obj.type
+        };
+    });
+
+    return espanol;
 }
 
 /*

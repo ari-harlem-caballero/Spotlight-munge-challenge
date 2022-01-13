@@ -44,7 +44,7 @@ test('should return dogs', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return dogs names', (expect) => {
+test('should return dogs names', (expect) => {
     const expected = ['scooter', 'sassy'];
     
     const actual = getNamesOfDogs(otherPets);
@@ -66,7 +66,7 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     const expected = [
         {
             nombre: 'coco',
