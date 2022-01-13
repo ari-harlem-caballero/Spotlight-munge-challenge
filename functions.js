@@ -101,7 +101,16 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+
+    const hungry = arr.map(pet => {
+        return { 
+            name: pet.name,
+            isHungry: true,
+            type: pet.type
+        };
+    });
+
+    return hungry;
 }
 
 /*
