@@ -18,7 +18,10 @@ OUTPUT:
 ]*/
 
 export function getDogs(arr) {
-    return [];
+    //taking in many pets, only returning type: dog
+    const dogs = arr.filter(pet => pet.type === 'dog');
+
+    return dogs;
 }
 
 /*
@@ -141,6 +144,7 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
+
     return [];
 }
 
