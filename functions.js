@@ -46,7 +46,11 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const pets = arr.filter(pet => pet.name);
+
+    const names = pets.map(name => name.name);
+
+    return names;
 }
 
 /*
